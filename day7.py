@@ -57,7 +57,7 @@ def part_two():
     trace_tree_down(totes,l,contains,(target,1))
     totes[0]-=1
     print(totes)
-#part_one()
+part_one()
 
 part_two()
 

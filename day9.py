@@ -2,15 +2,15 @@ import re
 from collections import deque
 
 #target_official=25918798
-infile='input/day9.1.txt'
+infile='input/day9.afal.txt'
 window=25
 
 def is_valid(q,t):
     r=False
     for i,n in enumerate(q):
         for j in range(i+1,len(q)):
-            #print(f"is {t} equal to {n}+{q[j]}?",end="")
             if t == n+q[j]:
+            #    print(f"{t} is equal to {n}+{q[j]}")
             #    print("...yes")
                 r=True
             #else:
